@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Solicitud de ingreso</title>
+</head>
+<body>
+    <form action="cuadro.php" method="POST">
+        <fieldset>
+            <legend><h2>Solicitud de ingreso a la Universidad</h2></legend>
+            <label>
+                Nombre(s): <input type="text" name="Nombre" placeholder="Ingrese su nombre" required><br><br>
+            </label>
+            <label>
+                Apellido Paterno: <input type="text" name="ApPat" placeholder="Ingrese su apellido paterno" required><br><br>
+            </label>
+            <label>
+                Apellido Materno: <input type="text" name="ApMat" placeholder="Ingrese su apellido materno" required><br><br>
+            </label>
+            <label>
+                Sexo: <input type="radio" name="sexo" value="Hombre" required>Hombre 
+                <input type="radio" name="sexo" value="Mujer" required>Mujer 
+            </label>
+            <br><br>
+            <label>
+                Edad: <input type="number" name="edad" min="10" max="100" required><br><br>
+            </label>
+            <label>
+                Correo electrónico: <input type="email" name="correo" placeholder="Ingrese su correo"required><br><br>
+            </label>
+            <label>
+                Telefono: <input type="number" name="tel"required><br><br>
+            </label>
+            <label>
+                Celular: <input type="number" name="cel"required><br><br>
+            </label>
+            <label>
+                Escuela de procedencia: <input type="text" name="Escuela">
+                
+                <br><br>
+            </label>
+            <label>
+                Promedio: <input type="number" name="promedio" min="0" max="10"  required><br><br>
+            </label>
+            <label>
+                Primera opción: <input type="text" name="op1" placeholder="Carrera que desea estudiar"required><br><br>
+            </label>
+            <label>
+                Segunda opción: <input type="text" name="op2" placeholder="Carrera que desea estudiar"required><br><br>
+            </label>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
